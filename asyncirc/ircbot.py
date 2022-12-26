@@ -10,6 +10,7 @@ import threading
 import logging
 import time
 
+
 if sys.hexversion < 0x03000000:
     #Python 2
     import Queue as queue
@@ -169,3 +170,4 @@ class IRCBot(IRCClient):
         return func
 
 __all__ = ['IRCBot']
+

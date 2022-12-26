@@ -1,3 +1,4 @@
+
 import sys
 from functools import wraps
 import socket
@@ -5,6 +6,7 @@ import ssl
 import threading
 import logging
 import time
+
 
 if sys.hexversion < 0x03000000:
     #Python 2
@@ -189,3 +191,4 @@ class IRCClient(object):
         self.send_raw("PRIVMSG {channel} :{message}".format(channel=channel, message=message))
 
 __all__ = ['IRCClient']
+
